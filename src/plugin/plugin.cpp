@@ -65,14 +65,13 @@ int Plugin::Init()
   toolbarId = InsertPlugInToolSVG("Template", normalIcon, rolloverIcon, toggledIcon, wxITEM_CHECK, "Template", "Template Plugin Toolbar", NULL, -1, 0, this);
 
   //Right-click menu entry
-  wxMenu templateMenu;
-  templateMenuID = AddCanvasContextMenuItem(new wxMenuItem(&templateMenu, -1, _("Template...")), this);
-  SetCanvasContextMenuItemViz(templateMenuID, false);
+  wxMenu menu;
+  menuID = AddCanvasContextMenuItem(new wxMenuItem(&menu, -1, _("Template...")), this);
+  SetCanvasContextMenuItemViz(menuID, false);
 
   //Inform OpenCPN about the plugin capabilities and requested callbacks
   return  ( INSTALLS_TOOLBAR_TOOL  //Add toolbar icon
-          | WANTS_PREFERENCES      //Add "Preferences" button in plugin catalogue
-          | WANTS_CURSOR_LATLON);  //Enable SetCursorLatLon()
+          | WANTS_PREFERENCES);      //Add "Preferences" button in plugin catalogue
 }
 
 bool Plugin::DeInit()
@@ -87,7 +86,7 @@ bool Plugin::DeInit()
 
     isToolbarActive = false;
     SetToolbarItemState(toolbarId, false);
-    SetCanvasContextMenuItemViz(templateMenuID, false);
+    SetCanvasContextMenuItemViz(menuID, false);
   }
 
   return true;
@@ -248,7 +247,7 @@ void Plugin::OnToolbarToolCallback(int id)
     myGUI->Show();
     myGUI->Raise();
     myGUI->SetFocus();
-    SetCanvasContextMenuItemViz(templateMenuID, true);
+    SetCanvasContextMenuItemViz(menuID, true);
   }
   else
   {
@@ -256,7 +255,7 @@ void Plugin::OnToolbarToolCallback(int id)
 
     if(!g_keepWindowActive)
     {
-      SetCanvasContextMenuItemViz(templateMenuID, false);
+      SetCanvasContextMenuItemViz(menuID, false);
     }
   }
 
@@ -270,7 +269,7 @@ void Plugin::OnContextMenuItemCallback(int id)
     return;
 
   //Entry in right-click menu
-  if(id == templateMenuID)
+  if(id == menuID)
   {
     DialogMenuEntry dlg(GetOCPNCanvasWindow());
 
@@ -293,7 +292,7 @@ void Plugin::OnGuiClosed()
   myGUI->Hide();
 
   if(!g_keepWindowActive)
-    SetCanvasContextMenuItemViz(templateMenuID, false);
+    SetCanvasContextMenuItemViz(menuID, false);
 
   //Refresh screen
   RequestRefresh(parentWindow);

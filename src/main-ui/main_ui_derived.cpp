@@ -1,11 +1,6 @@
-#include <cmath>
-#include <ctime>
-#include <wx/hyperlink.h>
-#include <wx/clipbrd.h>
-
 #include "main_ui_derived.h"
 #include "settings/global_settings.h"
-#include "plugin/template_plugin.h"
+#include "plugin/plugin.h"
 
 
 ////////////////////////////

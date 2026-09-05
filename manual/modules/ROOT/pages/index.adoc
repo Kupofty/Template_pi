@@ -16,7 +16,7 @@ This manual applies to **version x.y.z**.
 //----------------------------------------------------------------------------------------------------
 == Overview
 
-AisLive is an https://opencpn.org[OpenCPN] plugin.
+Template_pi is an https://opencpn.org[OpenCPN] plugin.
 
 [underline]#*Capabilities*#
 
@@ -46,7 +46,7 @@ AisLive is an https://opencpn.org[OpenCPN] plugin.
 
 1. Open OpenCPN
 2. Go to *Options → Plugins*
-3. Update catalog and search for the *Template* plugin
+3. Update catalog and search for the *YOUR_PLUGIN_NAME* plugin
 4. Click *Install* then *Enable*
 
 
