@@ -1,11 +1,12 @@
 # Template_pi
 
 Template_pi is an OpenCPN plugin template for quickly developing your own OpenCPN plugin.
+It provides a basic starting point for developing and coding a new OpenCPN plugin.
 
 
 ## Documentation
 
-Available in the online [User Manual]().
+Available in the online [User Manual](PUT_YOUR_URL_HERE).
 
 
 
