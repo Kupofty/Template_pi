@@ -44,8 +44,8 @@ set(PKG_INFO_URL https://github.com/Kupofty/Template_pi) #Used in the website bu
 # ------- Code sources --------
 set(SRC
     # OCPN plugin
-    ${CMAKE_SOURCE_DIR}/src/plugin/template_plugin.h
-    ${CMAKE_SOURCE_DIR}/src/plugin/template_plugin.cpp
+    ${CMAKE_SOURCE_DIR}/src/plugin/plugin.h
+    ${CMAKE_SOURCE_DIR}/src/plugin/plugin.cpp
 
     # Main UI
     ${CMAKE_SOURCE_DIR}/src/main-ui/main_ui_base.h

@@ -39,12 +39,12 @@
 //////////////
 
 //Main plugin class
-class TemplatePlugin : public opencpn_plugin_120, public wxEvtHandler
+class Plugin : public opencpn_plugin_120, public wxEvtHandler
 {
   public:
     // Constructor
-    TemplatePlugin(void* ppimgr);
-    ~TemplatePlugin();
+    Plugin(void* ppimgr);
+    ~Plugin();
     int Init() override;
     bool DeInit() override;
 
