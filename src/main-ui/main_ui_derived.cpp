@@ -33,3 +33,18 @@ void DialogMainGui::OnClose(wxCloseEvent& event)
 
 
 
+/////////////////
+/// Update UI ///
+/////////////////
+void DialogMainGui::updateCursorPosition(double lat, double lon)
+{
+    m_staticText_cursorLat->SetLabel(wxString::Format("%.6f", lat));
+    m_staticText_cursorLon->SetLabel(wxString::Format("%.6f", lon));
+}
+
+void DialogMainGui::updateBoatPosition(double lat, double lon)
+{
+    m_staticText_boatLat->SetLabel(wxString::Format("%.6f", lat));
+    m_staticText_boatLon->SetLabel(wxString::Format("%.6f", lon));
+}
+

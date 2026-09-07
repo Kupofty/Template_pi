@@ -16,6 +16,9 @@ class DialogMainGui : public DialogMainGuiBase
 
     Plugin* plugin = nullptr;
 
+    void updateCursorPosition(double lat, double lon);
+    void updateBoatPosition(double lat, double lon);
+
   protected:
     void OnClose(wxCloseEvent& event) override;
 };

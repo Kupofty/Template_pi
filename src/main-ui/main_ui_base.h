@@ -16,6 +16,7 @@
 #include <wx/font.h>
 #include <wx/colour.h>
 #include <wx/settings.h>
+#include <wx/statline.h>
 #include <wx/sizer.h>
 #include <wx/dialog.h>
 
@@ -30,6 +31,16 @@ class DialogMainGuiBase : public wxDialog
 
 	protected:
 		wxStaticText* m_staticText1;
+		wxStaticLine* m_staticline1;
+		wxStaticText* m_staticText2;
+		wxStaticText* m_staticText_cursorLat;
+		wxStaticText* m_staticText4;
+		wxStaticText* m_staticText_cursorLon;
+		wxStaticLine* m_staticline2;
+		wxStaticText* m_staticText6;
+		wxStaticText* m_staticText_boatLat;
+		wxStaticText* m_staticText8;
+		wxStaticText* m_staticText_boatLon;
 
 		// Virtual event handlers, override them in your derived class
 		virtual void OnClose( wxCloseEvent& event ) { event.Skip(); }
@@ -37,7 +48,7 @@ class DialogMainGuiBase : public wxDialog
 
 	public:
 
-		DialogMainGuiBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("Template Plugin"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 286,120 ), long style = wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxRESIZE_BORDER );
+		DialogMainGuiBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("Template Plugin"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 286,161 ), long style = wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxRESIZE_BORDER );
 
 		~DialogMainGuiBase();
 

@@ -60,6 +60,10 @@ class Plugin : public opencpn_plugin_120, public wxEvtHandler
     wxBitmap* GetPlugInBitmap() override;
     int GetToolbarToolCount() override;
 
+    //Plugin sets
+    void SetCursorLatLon(double lat, double lon) override;
+    void SetPositionFix(PlugIn_Position_Fix &pfix) override;
+
     //OCPN Interactions
     void ShowPreferencesDialog(wxWindow* parent) override;
     void OnToolbarToolCallback(int id) override;

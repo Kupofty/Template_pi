@@ -71,7 +71,9 @@ int Plugin::Init()
 
   //Inform OpenCPN about the plugin capabilities and requested callbacks
   return  ( INSTALLS_TOOLBAR_TOOL  //Add toolbar icon
-          | WANTS_PREFERENCES);      //Add "Preferences" button in plugin catalogue
+          | WANTS_PREFERENCES      //Add "Preferences" button in plugin catalogue
+          | WANTS_CURSOR_LATLON    //Enable SetCursorLatLon
+          | WANTS_NMEA_EVENTS);    //Enable SetPositionFix
 }
 
 bool Plugin::DeInit()
@@ -201,6 +203,22 @@ void Plugin::SaveSettings()
   }
 }
 
+
+
+/////////////////////////////
+/// OCPN Automatic Update ///
+/////////////////////////////
+void Plugin::SetCursorLatLon(double lat, double lon)
+{
+    if (myGUI != NULL)
+        myGUI->updateCursorPosition(lat, lon);
+}
+
+void Plugin::SetPositionFix(PlugIn_Position_Fix &pfix)
+{
+    if (myGUI != NULL)
+        myGUI->updateBoatPosition( pfix.Lat, pfix.Lon);
+}
 
 
 
