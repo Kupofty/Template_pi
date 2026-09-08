@@ -50,7 +50,7 @@
       <property name="minimum_size"></property>
       <property name="name">DialogMainGuiBase</property>
       <property name="pos"></property>
-      <property name="size">286,161</property>
+      <property name="size">300,150</property>
       <property name="style">wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxRESIZE_BORDER</property>
       <property name="subclass">; ; forward_declare</property>
       <property name="title">Template Plugin</property>
