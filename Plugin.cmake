@@ -12,16 +12,16 @@
 
 # -------- Options ----------
 set(OCPN_TEST_REPO
-    "YOUR_CLOUDSMITH_ALPHA_PATH"
+    "kupoftyopencpn/template-alpha"  
     CACHE STRING "Default repository for untagged builds"
 )
 set(OCPN_BETA_REPO
-    "YOUR_CLOUDSMITH_BETA_PATH"
+    "kupoftyopencpn/template-beta"  
     CACHE STRING
     "Default repository for tagged builds matching 'beta'"
 )
 set(OCPN_RELEASE_REPO
-    "YOUR_CLOUDSMITH_PROD_PATH"
+    "kupoftyopencpn/template-prod"  
     CACHE STRING
     "Default repository for tagged builds not matching 'beta'"
 )
