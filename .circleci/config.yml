@@ -262,7 +262,7 @@ workflows:
       - build-macos-universal:
           <<: *std-filters
 
-       ### Android (only with API 118) ###
+       ### Android ###
        #- build-android-arm64:
        #    <<: *std-filters
        #- build-android-armhf:
