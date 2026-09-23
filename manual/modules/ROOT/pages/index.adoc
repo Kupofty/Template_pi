@@ -20,7 +20,9 @@ See what's changed in the https://github.com/Kupofty/Template_pi/blob/main/CHANG
 == Overview
 
 Template_pi is an https://opencpn.org[OpenCPN] plugin.
+
 It is a template for quickly developing your own OpenCPN plugin.
+
 It provides a basic starting point for developing and coding a new OpenCPN plugin.
 
 
@@ -92,15 +94,16 @@ For more information, see the INSTALL.md file in the GitHub repository.
 
 //----------------------------------------------------------------------------------------------------
 == User Interface
-
+TODO
 
 //----------------------------------------------------------------------------------------------------
 == Right-click menu
-
+TODO
 
 //----------------------------------------------------------------------------------------------------
 == Settings
-
+TODO
 
 //----------------------------------------------------------------------------------------------------
 == Notes
+TODO

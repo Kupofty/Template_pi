@@ -31,6 +31,7 @@ class DialogMainGuiBase : public wxDialog
 
 	protected:
 		wxStaticText* m_staticText1;
+		wxStaticText* m_staticText10;
 		wxStaticLine* m_staticline1;
 		wxStaticText* m_staticText2;
 		wxStaticText* m_staticText_cursorLat;
