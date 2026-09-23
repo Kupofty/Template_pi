@@ -39,7 +39,7 @@ set(PKG_DESCRIPTION "Template plugin")
 set(PKG_AUTHOR "Kupofty")
 set(PKG_IS_OPEN_SOURCE "yes")
 set(PKG_HOMEPAGE https://github.com/Kupofty/Template_pi)
-set(PKG_INFO_URL https://github.com/Kupofty/Template_pi) #Used in the website button
+set(PKG_INFO_URL https://kupofty.github.io/Template_pi/template_plugin/index.html) #Used in the website button
 
 # ------- Code sources --------
 set(SRC

@@ -13,30 +13,30 @@ Plugin created by ©link:https://github.com/Kupofty[Kupofty] 2026
 This manual applies to **version x.y.z**.
 
 
+See what's changed in the https://github.com/Kupofty/Template_pi/blob/main/CHANGELOG.md[CHANGELOG].
+
+
 //----------------------------------------------------------------------------------------------------
 == Overview
 
 Template_pi is an https://opencpn.org[OpenCPN] plugin.
-
-[underline]#*Capabilities*#
-
-
-
-
-[underline]#*Use Cases*#
-
-
-
+It is a template for quickly developing your own OpenCPN plugin.
+It provides a basic starting point for developing and coding a new OpenCPN plugin.
 
 
 //----------------------------------------------------------------------------------------------------
 == Links
 *Sources:*
 
+- link:https://github.com/Kupofty/Template_pi[Github Repository]
+
+- link:https://cloudsmith.io/~kupoftyopencpn/repos/[Cloudsmith Packages]
+
 
 
 *Discussions:*
 
+- link:https://github.com/Kupofty/Template_pi/discussions[Github Discussions]
 
 
 //----------------------------------------------------------------------------------------------------
@@ -63,7 +63,7 @@ Template_pi is an https://opencpn.org[OpenCPN] plugin.
 
 Clone the repository:
 ----
-git clone https://github.com/Kupofty/Template_pi
+git clone --recurse-submodules https://github.com/Kupofty/Template_pi
 ----
 
 Create the build directory:
@@ -92,6 +92,15 @@ For more information, see the INSTALL.md file in the GitHub repository.
 
 //----------------------------------------------------------------------------------------------------
 == User Interface
-To open the plugin, click on the toolbar icon :
 
 
+//----------------------------------------------------------------------------------------------------
+== Right-click menu
+
+
+//----------------------------------------------------------------------------------------------------
+== Settings
+
+
+//----------------------------------------------------------------------------------------------------
+== Notes

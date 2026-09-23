@@ -4,7 +4,7 @@ It provides a basic starting point for developing and coding a new OpenCPN plugi
 
 
 ## Documentation
-Available in the online [User Manual](https://github.com/Kupofty/Template_pi/blob/main/manual/modules/ROOT/pages/index.adoc).
+Available in the online [User Manual](https://kupofty.github.io/Template_pi/template_plugin/index.html).
 
 
 ## Installation

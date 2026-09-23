@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Template Plugin Manual</title>
+    <link rel="canonical" href="https://github.com/Kupofty/Template_pi/template_plugin/index.html">
+    <meta name="generator" content="Antora 3.1.14">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://github.com/Kupofty/Template_pi"
+      >
+        Template Plugin Manual
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="template_plugin" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">TemplatePlugin</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">TemplatePlugin</a>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///home/mathis/Documents/GitHub/Template_pi//manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_author"><a class="anchor" href="#_author"></a>Author</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Plugin created by ©<a href="https://github.com/Kupofty">Kupofty</a> 2026</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manual_version"><a class="anchor" href="#_manual_version"></a>Manual Version</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This manual applies to <strong>version x.y.z</strong>.</p>
+</div>
+<div class="paragraph">
+<p>See what&#8217;s changed in the <a href="https://github.com/Kupofty/Template_pi/blob/main/CHANGELOG.md">CHANGELOG</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Template_pi is an <a href="https://opencpn.org">OpenCPN</a> plugin.
+It is a template for quickly developing your own OpenCPN plugin.
+It provides a basic starting point for developing and coding a new OpenCPN plugin.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Sources:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/Kupofty/Template_pi">Github Repository</a></p>
+</li>
+<li>
+<p><a href="https://cloudsmith.io/~kupoftyopencpn/repos/">Cloudsmith Packages</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Discussions:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/Kupofty/Template_pi/discussions">Github Discussions</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="underline"><strong>Method 1: Plugin Manager (Recommended)</strong></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open OpenCPN</p>
+</li>
+<li>
+<p>Go to <strong>Options → Plugins</strong></p>
+</li>
+<li>
+<p>Update catalog and search for the <strong>YOUR_PLUGIN_NAME</strong> plugin</p>
+</li>
+<li>
+<p>Click <strong>Install</strong> then <strong>Enable</strong></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="underline"><strong>Method 2: Manual Install (Cloudsmith)</strong></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to Cloudsmith</p>
+</li>
+<li>
+<p>Select the correct tarball for your OS</p>
+</li>
+<li>
+<p>Download the <code>.tar.gz</code> archive (not the <code>.xml</code>)</p>
+</li>
+<li>
+<p>Click on <strong>Options → Plugins → Import plugin&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p>Enable plugin in <strong>Options → Plugins</strong></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="underline"><strong>Method 3: Build from Source (Github)</strong></span></p>
+</div>
+<div class="paragraph">
+<p>Clone the repository:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>git clone --recurse-submodules https://github.com/Kupofty/Template_pi</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create the build directory:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>mkdir build
+cd build</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Linux</div>
+<div class="content">
+<pre>cmake ..
+make tarball</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Windows</div>
+<div class="content">
+<pre>cmake .. -A Win32
+cmake --build . --config Release --target tarball</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Import the tarball in OpenCPN via <strong>Options → Plugins → Import plugin&#8230;&#8203;</strong> and enable it.<br>
+For more information, see the INSTALL.md file in the GitHub repository.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_interface"><a class="anchor" href="#_user_interface"></a>User Interface</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_right_click_menu"><a class="anchor" href="#_right_click_menu"></a>Right-click menu</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_settings"><a class="anchor" href="#_settings"></a>Settings</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

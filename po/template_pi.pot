@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-05 17:40+0200\n"
+"POT-Creation-Date: 2026-09-23 22:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,28 @@ msgstr ""
 msgid "This is the template plugin GUI"
 msgstr ""
 
-#: src/main-ui/main_ui_base.h:40
+#: src/main-ui/main_ui_base.cpp:41
+msgid "CursorLat:"
+msgstr ""
+
+#: src/main-ui/main_ui_base.cpp:45 src/main-ui/main_ui_base.cpp:56
+#: src/main-ui/main_ui_base.cpp:85 src/main-ui/main_ui_base.cpp:96
+msgid "?"
+msgstr ""
+
+#: src/main-ui/main_ui_base.cpp:52
+msgid "CursorLon:"
+msgstr ""
+
+#: src/main-ui/main_ui_base.cpp:81
+msgid "BoatLat:"
+msgstr ""
+
+#: src/main-ui/main_ui_base.cpp:92
+msgid "BoatLon:"
+msgstr ""
+
+#: src/main-ui/main_ui_base.h:51
 msgid "Template Plugin"
 msgstr ""
 
@@ -34,11 +55,11 @@ msgstr ""
 msgid "Template Plugin Menu"
 msgstr ""
 
-#: src/plugin/template_plugin.cpp:69
+#: src/plugin/plugin.cpp:69
 msgid "Template..."
 msgstr ""
 
-#: src/plugin/template_plugin.cpp:216
+#: src/plugin/plugin.cpp:233
 msgid "Template Preferences"
 msgstr ""
 
