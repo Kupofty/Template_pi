@@ -30,7 +30,7 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p) {
 ////////////////////////////
 /// Class Initialization ///
 ////////////////////////////
-Plugin::Plugin(void* ppimgr) : opencpn_plugin_120(ppimgr), wxEvtHandler()
+Plugin::Plugin(void* ppimgr) : opencpn_plugin_121(ppimgr), wxEvtHandler()
 {
   //Logo for plugin catalog (SVG only)
   wxString pluginFolder = GetPluginDataDir(PKG_NAME) + wxFileName::GetPathSeparator() + "data" + wxFileName::GetPathSeparator();

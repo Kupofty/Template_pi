@@ -39,7 +39,7 @@
 //////////////
 
 //Main plugin class
-class Plugin : public opencpn_plugin_120, public wxEvtHandler
+class Plugin : public opencpn_plugin_121, public wxEvtHandler
 {
   public:
     // Constructor

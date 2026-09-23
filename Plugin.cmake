@@ -76,7 +76,7 @@ set (SOURCE_FILES ${SRC})
 # ------- Settings --------
 
 # Set API version
-set(PKG_API_LIB api-20)
+set(PKG_API_LIB api-21)
 
 # Late initialization
 macro(late_init)
